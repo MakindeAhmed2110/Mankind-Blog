@@ -1,0 +1,216 @@
+@font-face {
+    font-family: Inter;
+    src: url('/asset/Inter-Regular.otf');
+  }
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: #ffffffcd;
+    width: 100%;
+}
+.sectionone{
+    flex-basis: 42%;
+    height: 500px;
+    background: #fff;
+    box-shadow: 0 0 10px 10px #f1f1f1;
+    border-radius: 15px 0 0 15px ;
+    border: none;
+    outline: none;
+    padding-top: 0;
+    padding-left: 20px;
+}
+
+.sectiontwo{
+    flex-basis: 28%;
+    height: 500px;
+    background: #0070f3;
+    border-radius:  0 15px 15px 0;
+    box-shadow: 0 0 10px #f1f1f1;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding-top: 7%;
+  
+}
+ .sectionone header{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color : #0070f3;
+}
+.divider{
+    background: #0070f3;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.socialmedia{
+    display: flex;
+    justify-content: center;
+    gap : 10px;
+    padding-top: 15px;
+}
+.socialmedia span{
+    background: transparent;
+    border: 2px solid #f1f1f1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    padding-top: 5px;
+    font-size : 24px;
+}
+.account{
+    display: block;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    color: #7773737b;
+    padding-top: 10px;
+}
+.form{
+     display: block;
+     text-align: center;
+     padding-top: 15px;
+}
+
+
+
+
+
+.form button{
+    padding : 12px 50px;
+    border-radius: 35px;
+    color : #fff;
+    background : #0070f3;
+    font-size : 20px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+}
+.form .forgotten{
+    display: flex;
+    gap : 50px;
+    justify-content: center;
+    padding-top: 10px;
+}
+.forgotten span {
+    font-size: 16px;
+    color : #000000;
+    font-weight: 600;
+    cursor: pointer;
+}
+.password:hover{
+    color : #0070f3;
+}
+
+
+.sectiontwo h1{
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    letter-spacing: 0.01em;
+}
+.sectiontwo p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+}
+.sectiontwo button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background : transparent;
+    border: 2px solid #ffffffc2;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    margin-top: 40px;
+    transition:  .3s ease-in;
+}
+.sectiontwo button:hover{
+    background : #fff;
+    border: none;
+    outline: none;
+    color: #0070f3;
+}
+
+.dividertwo{
+    background: #fff;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -10px;
+}
+
+
+
+@media (max-width : 500px){
+    .container{
+        display: block;
+       padding : 20px 4vw;
+       width: 100%;
+       height: 120vh;
+    }
+    .sectionone{
+        box-shadow: none;
+        padding-left: 2px;
+        height: 120vh;
+    }
+    .sectionone header{
+        text-align: left;
+        font-size : 28px;
+    }
+    .divider{
+        display: block;
+        margin-right: auto;
+        margin-left: 0;
+    }
+    .socialmedia{
+        justify-content: left;
+    }
+    .sectiontwo{
+        display: none;
+    }
+    .account{
+        text-align: left;
+    }
+    .form{
+        display: block;
+        text-align: left;
+    }
+    .form .forgotten{
+        justify-content: left;
+        gap: 40px;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .form button{
+        margin-top: 30px;
+    }
+}

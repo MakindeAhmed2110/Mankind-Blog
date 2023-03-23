@@ -1,0 +1,561 @@
+@font-face {
+  font-family: DM Serif Display;
+  src: url('/asset/DMSerifText-Regular.ttf');
+}
+@font-face {
+  font-family: Inter;
+  src: url('/asset/Inter-Regular.otf');
+}
+
+.container{
+  margin : 0;
+  padding : 0;
+}
+.navbar {
+  display : flex;
+  padding : 0.02rem 4rem 0 4rem;
+  justify-content: space-between;
+  width: 100%;
+  background: #fff;
+  z-index: 999;
+  position: fixed;
+  opacity: .9;
+  top: 0;
+  border-bottom: 0.5px solid #0000007a;
+}
+.navbar h1 span{
+  color:#0070f3;
+}
+.nav{
+  display: flex;
+}
+.hamburger{
+  margin-top: 15px;
+  border-radius: 50%;
+  background: #f1f1f1;
+  justify-content: center;
+  height: 45px;
+  cursor : pointer;
+  width: 45px;
+  padding-top: 12px;
+}
+.bar{
+  display: block;
+  width: 30px;
+  height : 2px;
+  background-color : hsl(0, 0%, 0%);
+  margin : 5px auto;
+}
+.barone{
+  display: block;
+  width: 30px;
+  height : 1px;
+  background-color : #00000051;
+  margin : 5px auto;
+}
+.hamburger.active .bar:nth-child(1){
+  transform:  translateY(8px) rotate(45deg);
+}
+.hamburger.active .barone:nth-child(2){
+  transform:  translateY(-8px) rotate(-45deg);
+}
+.button{
+  border : 1px solid #333;
+  background: transparent;
+  height: 40px;
+  width: 80px;
+  margin-top: 18px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor : pointer;
+  transition: .2s ease-in-out;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-family: sans-serif;
+}
+.button:is( :hover, :focus, :active){
+  background-color: black;
+  color : white;
+  outline: none;
+  border: none;
+}
+
+.maintitle{
+  width : 100%;
+  height : 80vh;
+  background : linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/asset/girl-vr.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px ;
+  margin-top: 85px;
+  color : #fff;
+}
+.title{
+  font-family: 'DM Serif Display', sans-serif;
+  color : #fff;
+  font-weight: 700;
+  font-size: 64px;
+  text-transform: capitalize;
+  line-height: 65px;
+}
+.maintitle p{
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+.start {
+  border: none;
+  background: #f1f1f1;
+  padding : 20px 50px;
+  font-size: 20px;
+  margin-top: 30px;
+  cursor : pointer;
+  box-shadow: -10px -10px black;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+
+
+
+.technology, .technologytwo{
+  display: flex;
+  gap: 50px;
+  padding : 5rem 4rem 2rem 5rem;
+}
+.technology img{
+  width: 100%;
+  border-radius : 5px;
+}
+.technology h2, .technologytwo h2{
+  font-size: 24px;
+}
+.technology p, .technologytwo p{
+  cursor: pointer;
+  color : #0070f3;
+}
+
+.technologytwo img{
+  width: 60%;
+  height : 280px;
+  border-radius: 5px;
+}
+.technologytwo span{
+  flex-basis: 50%;
+}
+.technology h5, .technologytwo h5{
+  font-weight: 500;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 0.01em;
+}
+.navigations{
+  width: 100%;
+}
+.navigations ul{
+  position: fixed;
+  top : 4.5rem;
+  background-color: black;
+  color : #fff;
+  flex-direction: column;
+  width: 100%;
+  right: -100%;
+  height: 50vh;
+  list-style-type: none;
+  text-align: left;
+  transition: 0.3s;
+}
+.navigations ul li{
+  padding-top: 2rem;
+}
+.navigations ul.active {
+  right : 0;
+}
+
+.news{
+  margin: 5rem 0 2rem 0;
+  padding : 1rem 2rem 1rem 4rem;
+  display: flex;
+  gap: 15px;
+  border: none;
+  height: max-content;
+  background: #97bce687;
+}
+.newsone{
+  height: 70vh;
+  width : 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/asset/tech.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+ 
+}
+.newsone h2, .newsone button{
+  position: absolute;
+  bottom: 40px;
+}
+.newsone h2{
+  padding-bottom: 40px;
+  font-family: sans-serif;
+  font-size: 32px;
+  color: rgba(255, 255, 255, 0.926);
+  font-family : 'Inter', sans-serif;
+}
+
+.newstwo{
+  height: 70vh;
+  width : 40%;
+  background-image: url('/asset/robot.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.newstwo h2, .newstwo button{
+ position: absolute;
+  bottom: 30px;
+}
+
+.newsone h2 p,
+.newstwo h2 p,
+.newscontainer h2 p,
+.newscontainer2 h2 p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+.newsone button, .newstwo button{
+  width: 250px;
+  height : 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0;
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+  outline: 0;
+  background: #000212dc;
+  border-radius: 8px;
+  color: #fff;
+  transition: 1s ease-in;
+}
+.newsone button span, .newstwo button span{
+  font-size: 28px;
+  width: 50px;
+  font-weight: 700;
+  color: #fff;
+  transform:   rotate(-45deg);
+  transition: .5s ease-in;
+}
+.newsone button:hover, .newstwo button:hover{
+  background: #fff;
+  border: 2px solid #000212dc;
+  color : black;
+  width: 270px;
+  height: 50px;
+}
+.newsone button:hover span, .newstwo button:hover span{
+  color : #000000;
+  transform:   rotate(0);
+  margin-right: -5px;
+}
+
+.newscontainer button,
+.newscontainer2 button{
+  width: 200px;
+  height : 30px;
+  padding-left: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 0.3rem;
+}
+.newscontainer button span,
+.newscontainer2 button span{
+  font-size: 18px;
+  width: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.newscontainer button h3,
+.newscontainer2 button h3{
+  font-size: 14px;
+
+}
+
+
+.newstwo h2{
+  bottom: 70px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #fffffff8;
+}
+.container2{
+  display: block;
+  margin-top: 0;
+}
+.newscontainer{
+  height: 30vh;
+  width : 110%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/asset/card-3.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
+  position : relative;
+}
+
+.newscontainer2{
+  height: 30vh;
+  width : 110%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('/asset/card-2.jpg');
+  background-size: cover;
+  border-radius: 5px;
+  padding: 10px;
+  position : relative;
+  margin-top: 20px;
+}
+.newscontainer h2{
+  position : absolute;
+  color :#fff;
+  font-size: 16px;
+  bottom :20px;
+}
+.newscontainer button{
+  position: absolute;
+  bottom: 10px;
+}
+.newscontainer2 h2{
+  color :#fff;
+  font-size: 16px;
+  padding-top :70px;
+}
+.newscontainer2 button{
+  bottom: 10px;
+}
+
+
+.latest{
+  display : flex;
+  gap : 30px;
+ margin: 4rem auto;
+ padding: 2rem 5rem;
+ width: 100%;
+ height: max-content;
+ background: #f1f1f1d2;
+}
+.latest .trending h1{
+  border-left: 3px solid #0070f3;
+  padding-left : 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.contain1, .contain2{
+  background: #fff;
+  height : 110px;
+  width : 300px;
+  padding: 10px;
+  display : flex;
+  gap: 10px;
+  border-radius: 5px;
+  cursor : pointer;
+}
+.contain1 span, .contain2 span{
+  margin-top: -20px;
+  display: block;
+}
+.contain1 img, .contain2 img{
+  width : 100px;
+  height : 90px;
+}
+.contain2{
+  margin-top: 20px;
+}
+.contain1 h6, .contain2 h6{
+  font-family: 'Inter', sans-serif;
+}
+
+
+.latest .editor h1{
+  font-size: 22px;
+  border-left: 3px solid #0070f3;
+  padding-left : 10px;
+}
+.latest .editor img{
+  cursor: pointer;
+}
+.latest .type{
+  margin-top: 10px;
+}
+.type span.buttons{
+  display : flex;
+  gap : 0px;
+  margin-bottom: 20px;
+}
+.type button{
+  height : 40px;
+  width : 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color : #000000;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.type .button1{
+  border-right: 1px solid black;
+}
+.type #active{
+  background:#0070f3;
+  color : #fff;
+}
+.button:hover a{
+  color: white;
+}
+
+
+@media (max-width : 500px){
+  .logo{
+      font-size: 24px;
+  }
+  .button{
+      margin-top: 13px;
+  }
+  .hamburger{
+      margin-top: 10px;
+  }
+  .navbar{
+      padding : 0.4em 0.6em;
+  }
+  .maintitle{
+      padding : 20px 20px;
+      height: 100vh;
+      z-index: -1;
+      margin-top: 80px;
+  }
+  .title{
+      font-size: 50px;
+      text-align: left;
+      line-height: 48px;
+      padding-top: 5px;
+  }
+  .technology{
+      display: block;
+      padding : 4rem 1rem;
+  }
+
+ .technologytwo{
+  flex-direction: column-reverse;
+  padding : 1rem 1rem;
+ }
+  .technologytwo img{
+  width: 100%;
+  height : 200px;
+   }
+  .technologytwo span{
+     flex-basis: 100%;
+     margin-top: -20px;
+  }
+  .navigations ul{
+      height: 100vh;
+  }
+
+  .news{
+      margin-top: 3rem;
+      padding:2rem  1rem ;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  .newsone{
+      height: 70vh;
+      width : 100%;
+  }
+  .newstwo{
+      position: relative;
+      width : 100%;
+  }
+  .container2{
+      width: 100%;
+  }
+  .newscontainer, .newscontainer2{
+      width : 100%;
+      height: 50vh;
+  }
+  .newscontainer h2{
+      font-size: 20px;
+  }
+  .newscontainer, .newscontainer2{
+      position: relative;
+  }
+  .newscontainer h2, .newscontainer2 h2{
+      position: absolute;
+      bottom: 50px;
+      font-size: 20px;
+  }
+  .newscontainer h2, .newscontainer2 button{
+      position: absolute;
+      bottom : 20px;
+  }
+  .newsone h2, .newstwo h2{
+      font-size: 20px;
+  }
+
+  .latest{
+      display: block;
+      padding : 2rem 1rem;
+  }
+  .contain1, .contain2{
+      width: 100%;
+  }
+  .contain1 img{
+      flex-basis: 50%;
+  }
+  .contain2 img{
+      flex-basis: 60%;
+  }
+  .editor img{
+      width : 100%;
+  }
+
+  
+.newsone button, .newstwo button,
+.newscontainer button,
+.newscontainer2 button{
+  width: 200px;
+  height : 40px;
+  padding-left: 1rem;
+  padding-right: 0.3rem;
+}
+.newsone button span, .newstwo button span,
+.newscontainer button span,
+.newscontainer2 button span{
+  font-size: 24px;
+  width: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.newsone button h3, .newstwo button h3,
+.newscontainer button h3,
+.newscontainer2 button h3{
+  font-size: 14px;
+
+}
+.newsone button:hover, .newstwo button:hover,
+.newscontainer button:hover,
+.newscontainer2 button:hover{
+  width: 210px;
+  height: 44px;
+}
+
+}
+
+@media (max-width: 350px) {
+  .navbar{
+    padding : 0.3em 0.4em;
+}
+.maintitle{
+  padding : 5px 15px;
+  height: 90vh;
+}
+}

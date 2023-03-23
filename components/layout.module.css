@@ -1,0 +1,174 @@
+@font-face {
+    font-family: DM Serif Display;
+    src: url('/asset/DMSerifText-Regular.ttf');
+}
+@font-face {
+    font-family: Inter;
+    src: url('/asset/Inter-Regular.otf');
+}
+
+
+  .body_cover{
+    display: flex;
+    justify-content: space-between;
+    margin: 88px 0 20px 50px;
+    padding-left: 200px;
+    position: relative;
+  }
+  .buttonway{
+    position: fixed;
+    left:50px;
+    margin-top: 20px;
+    border : none;
+    outline: none;
+    height: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    background :#0070f3;
+    z-index: 999;
+}
+.buttonway a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
+
+.heading{
+  padding-top : 20px;
+  padding-right: 10px;
+}
+.header{
+  text-align: left;
+  font-family: 'DM Serif Display', sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 500;
+}
+.editors{
+  display : flex;
+  justify-content: space-between;
+}
+.editors .date span{
+  padding-left: 10px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.editors .author span{
+  padding-right: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+.editors .author img{
+  width: 35px;
+  height: 35px;
+  margin-bottom: -10px;
+}
+
+
+
+
+.latest{
+  display: block;
+      padding : 2rem 1rem;
+ width: 30%;
+ height: max-content;
+ background: #f1f1f1d2;
+
+}
+.latest .trending h1{
+  border-left: 3px solid #0070f3;
+  padding-left : 10px;
+  font-size: 19px;
+  font-weight: 600;
+}
+.contain1, .contain2{
+  background: #fff;
+  height : 110px;
+  width : 300px;
+  padding: 10px;
+  display : flex;
+  gap: 10px;
+  border-radius: 5px;
+  cursor : pointer;
+}
+.contain1 span, .contain2 span{
+  margin-top: -20px;
+  display: block;
+}
+.contain1 img, .contain2 img{
+  width : 100px;
+  height : 90px;
+}
+.contain2{
+  margin-top: 20px;
+}
+.contain1 h6, .contain2 h6{
+  font-family: 'Inter', sans-serif;
+}
+
+
+.latest .editor h1{
+  font-size: 22px;
+  border-left: 3px solid #0070f3;
+  padding-left : 10px;
+}
+.latest .editor img{
+  cursor: pointer;
+}
+.latest .type{
+  margin-top: 10px;
+}
+.type span.buttons{
+  display : flex;
+  gap : 0px;
+  margin-bottom: 20px;
+}
+.type button{
+  height : 40px;
+  width : 100px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color : #000000;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.type .button1{
+  border-right: 1px solid black;
+}
+.type #active{
+  background:#0070f3;
+  color : #fff;
+}
+.editor img{
+  width: 100%;
+}
+
+
+
+
+
+@media (max-width : 500px){
+  .body_cover{
+    display: block;
+    padding-left: 0px;
+    margin: 88px 0 20px 10px;
+  }
+  .latest{
+    width: 100%;
+  }
+  .buttonway{
+    margin-top: 5px;
+    left: 5px;
+  }
+}
+
+ 

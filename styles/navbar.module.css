@@ -1,0 +1,289 @@
+@font-face {
+    font-family: DM Serif Display;
+    src: url('/asset/DMSerifText-Regular.ttf');
+}
+@font-face {
+    font-family: Inter;
+    src: url('/asset/Inter-Regular.otf');
+}
+
+
+.navbar {
+    display : flex;
+    padding : 0.02rem 4rem 0 4rem;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    opacity: .9;
+    border-bottom: 0.5px solid #0000007a;
+  }
+  .navbar h1 span{
+    color:#0070f3;
+  }
+  .nav{
+    display: flex;
+  }
+  .hamburger{
+    margin-top: 15px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    justify-content: center;
+    height: 45px;
+    cursor : pointer;
+    width: 45px;
+    padding-top: 12px;
+    opacity: .9;
+  }
+  
+.logo span{
+  color:#0070f3;
+}
+  .bar{
+    display: block;
+    width: 30px;
+    height : 2px;
+    background-color : hsl(0, 0%, 0%);
+    margin : 5px auto;
+  }
+  .barone{
+    display: block;
+    width: 30px;
+    height : 1px;
+    background-color : #00000051;
+    margin : 5px auto;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform:  translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .barone:nth-child(2){
+    transform:  translateY(-8px) rotate(-45deg);
+  }
+  .button{
+    border : 1px solid #333;
+    background: transparent;
+    height: 40px;
+    width: 80px;
+    margin-top: 18px;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor : pointer;
+    transition: .2s ease-in-out;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-family: sans-serif;
+  }
+  .button a{
+    color: black;
+    text-decoration: none;
+  }
+  .button:is( :hover, :focus, :active){
+    background-color: black;
+    color : white;
+    outline: none;
+    border: none;
+    transition:  .5s ease-in;
+  }
+  .button:is( :hover, :focus, :active) a{
+    color : white;
+  }
+  
+.navigations{
+    width: 100%;
+  }
+  .navigations ul{
+    position: fixed;
+    top : 4.5rem;
+    background-color: black;
+    color : #fff;
+    flex-direction: column;
+    width: 100%;
+    right: -100%;
+    height: 50vh;
+    list-style-type: none;
+    text-align: left;
+    transition: 0.3s;
+  }
+  .navigations ul li{
+    padding-top: 2rem;
+  }
+  .navigations ul.active {
+    right : 0;
+  }
+
+
+
+
+  .newsletter {
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+  }
+  .newsletter .heading{
+    font-size: 32px;
+    font-weight: 700;
+    font-family:  'inter', sans-serif;
+  }
+  .newsletter  .sub_head{
+   font-size: 17px;
+    font-weight: 300;
+    padding-top: 12px;
+    font-family:  'Inter', sans-serif;
+  }
+  .horizontal{
+    border: none;
+    outline: none;
+    background: #0070f3;
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+  }
+  .newsletter form{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    margin-left: auto;
+    padding: 10px 15px 10px 35px;
+    margin-right: auto;
+    border: none;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 10px #f1f1f1;
+  }
+  .newsletter form input{
+    outline: none;
+    border: none;
+    padding: 15px 5px;
+    font-family: 'inter', sans-serif;
+    font-size: 16px;
+  }
+  .newsletter  button{
+    border: none;
+    color:#fff;
+    padding: 15px 25px ;
+    background: #0070f3;
+    border-radius: 25px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+  }
+
+   .footer{
+    margin: 80px;
+    
+   }
+  .footer_divider{
+    margin-top: 150px;
+     border: none;
+     background: black;
+     height: 0.05em;
+     width: 100%
+  }
+  .footer_title p{
+    font-family:  'Inter', sans-serif;
+    font-weight : 400;
+  }
+  .main_footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top:50px ;
+    flex-wrap: wrap;
+  }
+  .blog{
+    display: block;
+  }
+  .blog h3{
+    letter-spacing: 0.04em;
+  }
+  .list span{
+    display: block;
+    cursor: pointer;
+    padding-top: 0.8em;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .2s ease-in;
+  }
+  .list span:hover{
+    color: #0070f3;
+  }
+  .list span button{
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    background: white;
+    box-shadow:  0 0 5px 5px #f1f1f183;
+    margin-left: 5px;
+  }
+ 
+
+
+
+  @media (max-width : 500px){
+    .logo{
+        font-size: 24px;
+    }
+    .button{
+        margin-top: 13px;
+    }
+    .hamburger{
+        margin-top: 10px;
+    }
+    .navbar{
+        padding : 0.4em 0.6em;
+    }
+    .newsletter  .sub_head br{
+      display: none;
+      
+    }
+    .newsletter{
+      padding: 15px;
+    }
+     .newsletter .heading{
+      font-size: 28px
+    }
+    .newsletter  .sub_head{
+      text-align: center;
+    }
+    .newsletter form{
+      width: 95%;
+      margin-right: 20px;
+      margin-left: 15px;
+      padding: 7px 10px 7px 25px;
+      display: flex;
+      gap: 0px;
+    }
+    .newsletter form input{
+      flex-basis: 60%;
+      font-size: 16px;
+    }
+    .newsletter  button{
+      border: none;
+      color:#fff;
+      padding: 12px 8px;
+      flex-basis: 40%;
+      font-size : 14px;
+      font-weight: 500;
+    }
+    .footer{
+      margin: 10px;
+     
+     }
+     .main_footer{
+      padding: 15px;
+     }
+     .footer_title p br{
+      display: none;
+     }
+
+  }
